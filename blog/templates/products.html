@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block products %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+<hr class="featurette-divider">   
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Продукты</h2>      
+    <p>Оборудование и материалы для транспортной инфраструктуры</p>
+  </div>
+</div>
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Средства сигнализации</p>
+      <img src="{% static 'blog/img/Lumicone.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Программное обеспечение</p>
+      <img src="{% static 'blog/img/soft.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Сервера</p>
+      <img src="{% static 'blog/img/servers.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Коммуникационное оборудование</p>
+      <img src="{% static 'blog/img/commutators.png' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+<hr class="featurette-divider">   
+
+
+<div class="container-fluid bg-3 text-center">    
+   <div class="row">
+    <div class="col-sm-3">
+      <p>Bluetooth-детекторы</p>
+      <img src="{% static 'blog/img/bluetooth_detector.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Видеодетекторы</p>
+      <img src="{% static 'blog/img/video_detector.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Экологические датчики</p>
+      <img src="{% static 'blog/img/pollution_sensor.png' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Радары</p>
+      <img src="{% static 'blog/img/radar.jpg' %}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
+   
+{% endblock products %} 

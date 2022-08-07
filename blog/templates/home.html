@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block home_block %}
+<main>	
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+	  	<div class="carousel-indicators">
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  	</div>
+	  	<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="{% static 'blog/img/smart_city3.webp' %}" rect width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    	<div class="container">
+					<div class="carousel-caption text-start">
+						<h1>TRAFFICTECH</h1>
+						<p>Инновационные продукты, проекты и<br> технологичесике решения<br> в дорожном движении и <br> транспортной инфраструктуре</p>
+						<p><a class="btn btn-lg btn-primary" href="{% url 'products' %}">Подробнее</a></p>
+			    	</div>
+		  		</div>
+			</div>
+			<div class="carousel-item">
+				<img src="{% static 'blog/img/smart_city2.jpg' %}" rect width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+  		  		<div class="container">
+					<div class="carousel-caption">
+						<h1>TRAFFICTECH</h1>
+			  			<p>Комплексные решения по сложным информационным системам</p>
+			  			<p><a class="btn btn-lg btn-primary" href="{% url 'cases' %}">Подробнее</a></p>
+					</div>
+		  		</div>
+			</div>
+			<div class="carousel-item">
+				<img src="{% static 'blog/img/smart_city.jpg' %}" rect width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+     		 	<div class="container">
+					<div class="carousel-caption text-end">
+			  			<h1>TRAFFICTECH</h1>
+			  			<p>  Гибкие подходы к интеграции<br> различных сфер деятельности и<br> интересов заказчиков.<br>
+				 			Опыт взаимодействия с организациями<br>различных форм собственности <br><br><br><br><br><br></p>
+			  			<p><a class="btn btn-lg btn-primary" href="{% url 'cases' %}">Подробнее</a></p>
+					</div>
+		  		</div>
+			</div>
+	    </div>
+	  	<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+	  	</button>
+	  	<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+	  	</button>
+	</div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+		<div class="col-md-7">
+		  	<h2 class="featurette-heading fw-normal lh-1">Bluetooth-продукты <br> <span class="text-muted">Bluetooth-технологии</span></h2>
+		  	<p class="lead">Блютуз-детекторы позволяют отслеживать мак-адреса транспортных средств и рассчитывать на основании данных среднюю скорость и матрицы корреспонденций</p>
+		</div>
+		<div class="col-md-5">
+			<img  src="{% static 'blog/img/road_bluetooth.jpeg' %}" class="responsive">
+		</div>
+	</div>
+    <hr class="featurette-divider">
+	<div class="row featurette">
+		<div class="col-md-7 order-md-2">
+		  	<h2 class="featurette-heading fw-normal lh-1">Радар-детекторы <br><span class="text-muted">Видеодетекторы</span></h2>
+		  	<p class="lead">Радар-детекторы позволяют определять основные параметры транспортных потоков: скорость, интенсивность, состав потока, длина очереди.
+           		Видеодетекторы позволяют распознавать номерные знаки транпсортных средств, состав потока, интенсивность, скорость, поведение потока. 
+		  	</p>
+		</div>
+		<div class="col-md-5 order-md-1">
+			<img src="{% static 'blog/img/video_detection.jpg' %}" class="responsive">
+		</div>
+	</div>
+    	<hr class="featurette-divider">
+    	<div class="row featurette">
+			<div class="col-md-7">
+		  		<h2 class="featurette-heading fw-normal lh-1">Экологические датчики<br><span class="text-muted">Средства сигнализации</span></h2>
+		  		<p class="lead">Экологические датчики собирают информацию о величине выбросов от тарснпорных потоков для выработки стратегии управления транспортным спросом.
+				Средства сигнализации в виде светодиодных втсавок в проезжую часть предпреждают водителей о приближении пешеходов. </p>
+			</div>
+			<div class="col-md-5">
+				<img src="{% static 'blog/img/green_city.jpg' %}" class="responsive">
+  			</div>
+		</div>
+    	<hr class="featurette-divider">
+  	</div> 
+	  <script src="{% static 'blog/js/bootstrap.bundle.min.js' %}"></script> 
+  </main>
+
+{% endblock home_block %}   
+  
+  
+	
+
+  

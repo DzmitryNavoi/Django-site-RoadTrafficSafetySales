@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+  
+{% block forms %}
+<style>
+    body{background-color:#DCDCDC;} 
+</style>
+<body class="container" >  
+    <hr class="featurette-divider">
+            <form method="POST" novalidate>
+                <div style="margin:50px">
+                    <h4>Напишите нам, если у вас есть вопросы</h4>
+                    {% csrf_token %}
+                    <div class ="form-error">{{ form.non_field_errors }}</div>
+                    {% for f in form %}
+                    <div class="form-group">
+                        {{ f.label_tag }}
+                        <div>{{ f }}</div>
+                        <div class ="form-error">{{ f.errors }}</div>
+                    </div>      
+                    {% endfor %}
+                <input type="submit" value="отправить" >
+                </div>          
+            </form>
+          
+    <hr class="featurette-divider">         
+          
+            <div style="margin:80px">
+               <h4 style="color:#C71585">OOO "Траффиктех", 220055, г.Минск, ул.Каменногорская, 45, офис 85</h4>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.8911991981595!2d27.42634571568689!3d53.93367678010634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4c09e1efc35%3A0xbba5d19b76c65f30!2z0YPQuy4g0JrQsNC80LXQvdC90L7Qs9C-0YDRgdC60LDRjyA0NSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1659119838894!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+            </div>
+</body>
+{% endblock forms %}   
+ 
+
